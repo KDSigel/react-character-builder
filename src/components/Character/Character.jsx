@@ -1,30 +1,30 @@
 import React from 'react'
 
-export default function Character(head) {
+export default function Character({head, torso, legs}) {
     return (
         <>
         <div style={{
             backgroundImage: `url(${head}.png)`,
-            height: 250,
-            width: 788,
+            height: 125,
+            width: 394,
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
         }}
         >
         </div>
         <div style={{
-            backgroundImage: 'url(torso-1.png)',
-            height: 400,
-            width: 788,
+            backgroundImage: `url(${torso}.png)`,
+            height: 200,
+            width: 394,
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
         }}
         >
         </div>
         <div style={{
-            backgroundImage: 'url(legs-1.png)',
-            height: 785,
-            width: 788,
+            backgroundImage: `url(${legs}.png)`,
+            height: 392.5,
+            width: 394,
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
         }}
