@@ -15,6 +15,7 @@ function App() {
 
   const handleClick = () => {
     setAllCatchphrases((previousCatches) => [...previousCatches, newCatchphrase])
+    setNewCatchphrase('')
   }
 
   return (
