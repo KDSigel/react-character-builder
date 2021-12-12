@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render our Picker component 1`] = `
+<div>
+  <div>
+    <label>
+      <p>
+        Head
+        <select>
+          <option
+            value="Fry"
+          >
+            Fry
+          </option>
+          <option
+            value="MemeMan"
+          >
+            MemeMan
+          </option>
+          <option
+            value="ShibaInu"
+          >
+            ShibaInu
+          </option>
+        </select>
+      </p>
+    </label>
+    <label>
+      <p>
+        Torso
+        <select>
+          <option>
+            Aladdin
+          </option>
+          <option>
+            Homer
+          </option>
+          <option>
+            Spidey
+          </option>
+        </select>
+      </p>
+    </label>
+    <label>
+      <p>
+        Legs
+        <select>
+          <option>
+            SkateObama
+          </option>
+          <option>
+            SpongeBob
+          </option>
+          <option>
+            SpiderLegs
+          </option>
+        </select>
+      </p>
+    </label>
+  </div>
+</div>
+`;

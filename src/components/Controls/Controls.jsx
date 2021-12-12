@@ -10,10 +10,8 @@ export default function Controls({
 }) {
 
 const headOptions = ['Fry', 'MemeMan', 'ShibaInu']
-
 const torsoOptions = ['Aladdin', 'Homer', 'Spidey']
-
-const legsOptions = ['Skate Obama', 'SpongeBob', 'Spidey']
+const legsOptions = ['SkateObama', 'SpongeBob', 'SpiderLegs']
 
     return (
         <div>
@@ -29,7 +27,7 @@ const legsOptions = ['Skate Obama', 'SpongeBob', 'Spidey']
             </label>
             <label>
                 <p>Torso 
-                    <select onChange={(e) => setTorso(e.target.value)}>
+                    <select onChange={(e) => setTorso(e.target.value)} value={torso}>
                         {torsoOptions.map((torsoOption) => (
                             <option key={torsoOption}>{torsoOption}</option>
                         ))
@@ -39,7 +37,7 @@ const legsOptions = ['Skate Obama', 'SpongeBob', 'Spidey']
             </label>
             <label>
                 <p>Legs 
-                    <select onChange={(e) => setLegs(e.target.value)}>
+                    <select onChange={(e) => setLegs(e.target.value)} value={legs}>
                         {legsOptions.map((legsOption) => (
                             <option key={legsOption}>{legsOption}</option>
                         ))
@@ -47,7 +45,6 @@ const legsOptions = ['Skate Obama', 'SpongeBob', 'Spidey']
                     </select>
                     </p>
             </label>
-
         </div>
     )
 }

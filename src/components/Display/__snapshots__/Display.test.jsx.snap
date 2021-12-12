@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders display and looks at html stuff 1`] = `
+<div>
+  <div>
+    Catchphases: 
+    <div>
+      sup?
+    </div>
+    <div>
+      nah.
+    </div>
+    <div>
+      Why Now?
+    </div>
+  </div>
+</div>
+`;

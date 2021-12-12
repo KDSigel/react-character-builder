@@ -1,13 +1,22 @@
 import { useState } from 'react';
 import './App.css';
 import Character from './components/Character/Character';
+import CatchPhrase from './components/Controls/CatchPhrase';
 import Controls from './components/Controls/Controls';
+import Display from './components/Display/Display';
 
 function App() {
 
-  const [head, setHead] = useState('');
-  const [torso, setTorso] = useState('');
-  const [legs, setLegs] = useState('');
+  const [head, setHead] = useState('Fry');
+  const [torso, setTorso] = useState('Aladdin');
+  const [legs, setLegs] = useState('SkateObama');
+  const [newCatchphrase, setNewCatchphrase] = useState('');
+  const [allCatchphrases, setAllCatchphrases] = useState([]);
+
+  const handleClick = () => {
+    setAllCatchphrases((previousCatches) => [...previousCatches, newCatchphrase])
+    setNewCatchphrase('')
+  }
 
   return (
     <div className="App">
@@ -20,7 +29,14 @@ function App() {
           legs={legs}
           setLegs={setLegs}
           />
-          <Character head={head}/>
+          <CatchPhrase newCatchphrase={newCatchphrase}
+          setNewCatchphrase={setNewCatchphrase}
+          handleClick={handleClick} />
+          <Display allCatchphrases={allCatchphrases} />
+          <Character head={head}
+          torso={torso}
+          legs={legs}
+          />
 
     </div>
   );
