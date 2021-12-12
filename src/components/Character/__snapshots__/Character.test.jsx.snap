@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should display the Character component 1`] = `
+<div>
+  <div
+    style="background-image: url(undefined.png); height: 125px; width: 394px; background-size: cover; background-repeat: no-repeat;"
+  />
+  <div
+    style="background-image: url(undefined.png); height: 200px; width: 394px; background-size: cover; background-repeat: no-repeat;"
+  />
+  <div
+    style="background-image: url(undefined.png); height: 392.5px; width: 394px; background-size: cover; background-repeat: no-repeat;"
+  />
+</div>
+`;
