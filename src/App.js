@@ -3,8 +3,6 @@ import './App.css';
 import Character from './components/Character/Character';
 import Controls from './components/Controls/Controls';
 
-import Picker from './components/Controls/Controls';
-
 function App() {
 
   const [head, setHead] = useState('');
